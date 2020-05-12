@@ -3,7 +3,7 @@ import unicodedata
 import string
 import argparse
 
-import naco
+from pynaco import naco
 
 
 def remove_punct(value):

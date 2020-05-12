@@ -1,0 +1,7 @@
+A	Dog
+B	Dog
+D	Dog
+B	Cat
+D	Cat
+C	Cat
+E	Shark
