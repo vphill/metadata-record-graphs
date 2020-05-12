@@ -27,7 +27,7 @@ D	Dog
 B	Cat
 D	Cat
 C	Cat
-E	Shark%  
+E	Shark
 ```
 
 # Test
