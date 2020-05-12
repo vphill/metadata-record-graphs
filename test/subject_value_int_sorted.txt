@@ -1,7 +1,0 @@
-cat	2
-cat	3
-cat	4
-dog	1
-dog	2
-dog	4
-shark	5
