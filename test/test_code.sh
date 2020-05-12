@@ -5,7 +5,7 @@ echo "creating node_ids.txt"
 python3 ../code/node_list_to_intids.py nodes.txt > node_ids.txt
 
 echo "Replacing identifiers with intids"
-python3 ../code/replace_ids_with_intid.py subject_ark_value.txt > subject_value_int.txt
+python3 ../code/replace_ids_with_intid.py ark_value.txt > subject_value_int.txt
 
 echo "Normalizing values"
 python3 ../code/normalizer.py --naco subject_value_int.txt > subject_normalized_value_int.txt
@@ -30,3 +30,7 @@ python3 ../code/calculate_graph_stats.py subject_degree_complete.txt
 
 echo "Calculating Degree Stats"
 python3 ../code/calculate_degree_stats.py subject_degree_complete.txt
+
+echo "\nCleaning up test files"
+rm node_ids.txt
+rm subject*.txt
