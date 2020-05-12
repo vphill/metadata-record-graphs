@@ -32,4 +32,6 @@ E	Shark
 
 # Test
 
-You can run the tests 
+You can run the tests by moving into the tests directory and typing. 
+
+`bash test_code.sh`
