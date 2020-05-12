@@ -1,0 +1,5 @@
+scipy
+numpy
+
+# pynaco for normalizer.py
+git+https://github.com/unt-libraries/pynaco@master
