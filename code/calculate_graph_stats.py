@@ -64,7 +64,16 @@ else:
     gini_coefficient = 0.0
 
 
-print('\t'.join([
+print('connected nodes:', connected_nodes)
+print('unconnected nodes:', unconnected_nodes)
+print('total edges:', total_edges)
+print('density:', density)
+print('average degree:', average_degree)
+print('qlink mean:', qlink_mean)
+print('qlink stddev:', qlink_std)
+
+
+'''print('\t'.join([
     str(connected_nodes),
     str(unconnected_nodes),
     str(total_edges),
@@ -73,3 +82,5 @@ print('\t'.join([
     str(qlink_mean),
     str(qlink_std)
     ]))
+'''
+

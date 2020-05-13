@@ -10,11 +10,8 @@ python3 ../code/replace_ids_with_intid.py ark_value.txt > subject_value_int.txt
 echo "Normalizing values"
 python3 ../code/normalizer.py --naco subject_value_int.txt > subject_normalized_value_int.txt
 
-echo "Moving normalized values back into the workflow"
-mv -v subject_normalized_value_int.txt subject_value_int.txt
-
 echo "Sorting value_int"
-LC_ALL=C sort -T . -S 20G subject_value_int.txt -o subject_value_int_sorted.txt
+LC_ALL=C sort -T . -S 20G subject_normalized_value_int.txt -o subject_value_int_sorted.txt
 
 echo "Creating Adjacency"
 python3 ../code/create_adjacency_list.py subject_value_int_sorted.txt > subject_value_adjacency.txt
